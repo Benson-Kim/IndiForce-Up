@@ -1,35 +1,14 @@
 import React from "react";
 
-import { BsPatchPlus, BsCreditCard } from "react-icons/bs";
+import { BsCreditCard } from "react-icons/bs";
 import { IoBriefcaseOutline } from "react-icons/io5";
 import { RiMapPin2Line } from "react-icons/ri";
+import { Header } from "../Components";
 
 const Search = () => {
 	return (
 		<div className='flex-1 bg-zinc-100 '>
-			<section className='flex items-center justify-between w-full p-5 bg-white '>
-				<div className='flex items-center w-1/2 '>
-					<input
-						type='text'
-						placeholder='Search experts'
-						className='w-3/5 px-3 py-1 mr-3 border rounded border-zinc-300'
-					/>
-					<div className='flex items-center gap-x-3'>
-						<p>or</p>
-						<button className='px-4 py-2 font-sans text-sm tracking-wide text-white uppercase transition duration-300 ease-in rounded-sm cursor-pointer bg-teal hover:bg-green-600'>
-							select categories
-						</button>
-					</div>
-				</div>
-				<div className=''>
-					<button className='flex items-center justify-center px-4 py-2 font-sans text-sm tracking-wide text-white uppercase transition duration-300 ease-in rounded-sm cursor-pointer gap-x-2 hover:bg-green-600 bg-lime-500'>
-						<i>
-							<BsPatchPlus />
-						</i>
-						post a job
-					</button>
-				</div>
-			</section>
+			<Header />
 			<section className='flex justify-between w-full p-5 bg-white border-gray-300 border-y-2'>
 				<div className='flex space-x-5'>
 					<h2 className='font-medium text-zinc-700'>

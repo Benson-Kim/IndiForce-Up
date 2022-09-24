@@ -12,7 +12,7 @@ import { CgMenuLeft } from "react-icons/cg";
 
 const Sidebar = () => {
 	return (
-		<aside className='w-64 border-slate-400 bg-zinc-800'>
+		<aside className='w-64 h-full border-slate-400 bg-zinc-800'>
 			<div className='flex items-center justify-center py-6 text-white bg-slate-900'>
 				Indiforce Logo
 			</div>
@@ -32,7 +32,7 @@ const Sidebar = () => {
 						All jobs
 					</h2>
 					<Link
-						to=''
+						to='jobs-open'
 						className='flex items-center py-3 pl-4 my-1 transition duration-300 ease-in border-l-4 cursor-pointer border-zinc-800 gap-x-4 text-slate-50 hover:border-l-4 hover:border-cyan-400 hover:text-cyan-400 hover:bg-slate-800 '
 					>
 						<i>
@@ -95,7 +95,7 @@ const Sidebar = () => {
 						<p>Terms</p>
 					</Link>
 					<Link
-						to=''
+						to='/invoices'
 						className='flex items-center py-3 pl-4 my-1 transition duration-300 ease-in border-l-4 cursor-pointer border-zinc-800 gap-x-4 text-slate-50 hover:border-l-4 hover:border-cyan-400 hover:text-cyan-400 hover:bg-slate-800 '
 					>
 						<i>

@@ -1,13 +1,18 @@
 import React from "react";
+
+import { Outlet, Route, Routes } from "react-router-dom";
+
 import { Header, Main, Sidebar } from "./Components";
-import { Search } from "./Pages";
+import { Dashboard, Invoices, OpenJobs, Search } from "./Pages";
+
 const Layout = () => {
 	return (
-		<div className='flex justify-between w-full '>
-			<Sidebar />
-			{/* <Main /> */}
-			<Search />
-		</div>
+		<>
+			{/* <div className='flex justify-between w-full h-full '> */}
+			<div>
+				<Sidebar />
+			</div>
+		</>
 	);
 };
 

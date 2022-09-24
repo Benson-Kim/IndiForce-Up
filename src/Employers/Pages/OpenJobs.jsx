@@ -7,10 +7,9 @@ import { BiChevronRight } from "react-icons/bi";
 import { IoBriefcaseOutline } from "react-icons/io5";
 import { RiMapPin2Line } from "react-icons/ri";
 import { GiSandsOfTime } from "react-icons/gi";
+import { Header } from "../Components";
 
-import Header from "./Header";
-
-const Main = () => {
+const OpenJobs = () => {
 	return (
 		<div className='flex-1 bg-zinc-100 '>
 			<Header />
@@ -325,4 +324,4 @@ const Main = () => {
 	);
 };
 
-export default Main;
+export default OpenJobs;
