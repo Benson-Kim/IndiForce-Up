@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import { BsCreditCard } from "react-icons/bs";
 import { BiChevronRight } from "react-icons/bi";
@@ -10,6 +10,9 @@ import { GiSandsOfTime } from "react-icons/gi";
 import { Header } from "../Components";
 
 const OpenJobs = () => {
+	const param = useParams();
+	const expertId = param.id;
+
 	return (
 		<div className='flex-1 bg-zinc-100 '>
 			<Header />
@@ -251,7 +254,7 @@ const OpenJobs = () => {
 											Julian Wan
 										</h2>
 										<Link
-											to=''
+											to={`/experts/${expertId}`}
 											className='flex items-center space-x-2 text-teal-500 transition duration-300 ease-in hover:text-green-600 '
 										>
 											View full profile

@@ -24,7 +24,7 @@ const Header = () => {
 	const [clickCategory, setClickCategories] = useState(false);
 
 	return (
-		<header>
+		<header className=''>
 			<section className='flex items-center justify-between w-full p-5 bg-white '>
 				<div className='flex items-center w-1/2 '>
 					<input

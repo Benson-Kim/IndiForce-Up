@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+import { Link, useParams } from "react-router-dom";
 
 import { BiMessageRoundedDetail } from "react-icons/bi";
 import { FaFileInvoiceDollar } from "react-icons/fa";
@@ -11,6 +12,9 @@ import { IoBriefcaseOutline, IoFileTrayOutline } from "react-icons/io5";
 import { CgMenuLeft } from "react-icons/cg";
 
 const Sidebar = () => {
+	const param = useParams();
+	const expertId = param.id;
+
 	return (
 		<aside className='w-64 h-full border-slate-400 bg-zinc-800'>
 			<div className='flex items-center justify-center py-6 text-white bg-slate-900'>
@@ -41,7 +45,7 @@ const Sidebar = () => {
 						<p>Open</p>
 					</Link>
 					<Link
-						to=''
+						to='contracted'
 						className='flex items-center py-3 pl-4 my-1 transition duration-300 ease-in border-l-4 cursor-pointer border-zinc-800 gap-x-4 text-slate-50 hover:border-l-4 hover:border-cyan-400 hover:text-cyan-400 hover:bg-slate-800 '
 					>
 						<i>
@@ -74,7 +78,7 @@ const Sidebar = () => {
 						<p>Contracted</p>
 					</Link>
 					<Link
-						to=''
+						to={`/experts/${expertId}`}
 						className='flex items-center py-3 pl-4 my-1 transition duration-300 ease-in border-l-4 cursor-pointer border-zinc-800 gap-x-4 text-slate-50 hover:border-l-4 hover:border-cyan-400 hover:text-cyan-400 hover:bg-slate-800 '
 					>
 						<i>
