@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Layout from "./Employers/Layout";
 import {
+	Contracts,
 	Dashboard,
 	Expert,
 	Invoices,
@@ -19,6 +20,7 @@ const App = () => {
 				<Route path={"/experts/:expertId"} element={<Expert />} />
 
 				<Route path='/invoices' element={<Invoices />} />
+				<Route path='/contracts' element={<Contracts />} />
 			</Routes>
 		</div>
 	);
