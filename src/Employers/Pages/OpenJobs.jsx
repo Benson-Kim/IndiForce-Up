@@ -14,34 +14,37 @@ const OpenJobs = () => {
 	const expertId = param.id;
 
 	return (
-		<div className='flex-1 bg-zinc-100 '>
+		<div className='flex-1 mx-3'>
 			<Header />
-			<section className='flex w-full border-gray-300 border-y-2'>
-				<div className='w-1/3 px-4 py-3 bg-white border-r-2 border-zinc-300'>
-					<p className='font-semibold text-zinc-800'>
-						Open <span className='ml-8 text-zinc-500'>4 Jobs</span>{" "}
+			<section className='flex w-full'>
+				<div className='w-1/3 px-4 py-3 border-r-2 border-alto-light'>
+					<p className='font-semibold text-mine-dark'>
+						Open{" "}
+						<span className='ml-8 font-medium text-mine-dark'>
+							4 Jobs
+						</span>
 					</p>
 				</div>
 				<div className='flex items-center justify-between flex-1 px-6'>
-					<h2 className='font-semibold text-zinc-800 '>
+					<h2 className='font-semibold text-mine-dark '>
 						Weather widget
 					</h2>
 					<Link
 						to=''
-						className='font-semibold text-blue-500 capitalize transition duration-300 ease-in cursor-pointer hover:text-green-600'
+						className='font-medium capitalize transition duration-300 ease-in cursor-pointer text-kyrrex-green hover:text-malibu-blue'
 					>
 						View Related
 					</Link>
 				</div>
 			</section>
 			<section className='flex w-full border-gray-300 border-y-2'>
-				<div className='w-1/3 py-3 bg-white border-r-2 border-zinc-300'>
+				<div className='w-1/3 pt-3 bg-white border-r-2 border-alto-light'>
 					<Link
 						to=''
-						className='flex font-normal hover:font-medium  py-2 items-center gap-x-3 border-l-4 hover:bg-zinc-100 transition duration-300 ease-in cursor-pointer border-white hover:border-[#9d4cb3]'
+						className='flex items-center py-2 font-normal transition duration-300 ease-in border-l-4 border-white cursor-pointer hover:font-medium gap-x-0.5 hover:bg-lily-light hover:border-malibu-blue'
 					>
 						<div className='relative inline-flex mx-3'>
-							<span className='absolute bottom-0 right-0 inline-flex w-3 h-3 transform bg-red-500 rounded-full ring-2 ring-white translate-x-1/3 translate-y-1/3'></span>
+							<span className='absolute bottom-1 right-1 inline-flex  w-2.5 h-2.5 transform rounded-full bg-amaranth-pink ring-2 ring-white translate-x-1/4 translate-y-1/4'></span>
 							<img
 								className='object-cover w-16 h-12 rounded-full'
 								alt='User avatar'
@@ -51,25 +54,25 @@ const OpenJobs = () => {
 
 						<div className='flex flex-col w-full gap-y-1 '>
 							<div className='flex items-center justify-between w-full pr-3'>
-								<h2 className='text-lg text-zinc-800'>
+								<h2 className='text-base font-medium text-mine-dark'>
 									Halie Carlos
 								</h2>
-								<span className='text-sm text-zinc-400 '>
-									0230
+								<span className='text-sm text-mine-dark opacity-80'>
+									02:30 am
 								</span>
 							</div>
-							<p className='text-sm text-zinc-500'>
+							<p className='text-sm opacity-75 text-mine-dark'>
 								PHP Page Development
 							</p>
 						</div>
 					</Link>
-					<hr className='ml-24 border-zinc-300' />
+					<hr className='ml-20 border-alto-light' />
 					<Link
 						to=''
-						className='flex font-normal hover:font-medium  py-2 items-center gap-x-3 border-l-4 hover:bg-zinc-100 transition duration-300 ease-in cursor-pointer border-white hover:border-[#9d4cb3]'
+						className='flex items-center py-2 font-normal transition duration-300 ease-in border-l-4 border-white cursor-pointer hover:font-medium gap-x-0.5 hover:bg-lily-light hover:border-malibu-blue'
 					>
 						<div className='relative inline-flex mx-3'>
-							<span className='absolute bottom-0 right-0 inline-flex w-3 h-3 transform bg-red-500 rounded-full ring-2 ring-white translate-x-1/3 translate-y-1/3'></span>
+							<span className='absolute bottom-1 right-1 inline-flex  w-2.5 h-2.5 transform rounded-full bg-amaranth-pink ring-2 ring-white translate-x-1/4 translate-y-1/4'></span>
 							<img
 								className='object-cover w-16 h-12 rounded-full'
 								alt='User avatar'
@@ -79,25 +82,25 @@ const OpenJobs = () => {
 
 						<div className='flex flex-col w-full gap-y-1 '>
 							<div className='flex items-center justify-between w-full pr-3'>
-								<h2 className='text-lg text-zinc-800'>
+								<h2 className='text-base font-medium text-mine-dark'>
 									Cate Sigmund
 								</h2>
-								<span className='text-sm text-zinc-400 '>
-									1645
+								<span className='text-sm text-mine-dark opacity-80'>
+									04:45 pm
 								</span>
 							</div>
-							<p className='text-sm text-zinc-500'>
+							<p className='text-sm opacity-75 text-mine-dark'>
 								Frontend Developer
 							</p>
 						</div>
 					</Link>
-					<hr className='ml-24 border-zinc-300' />
+					<hr className='ml-20 border-alto-light' />
 					<Link
 						to=''
-						className='flex font-normal hover:font-medium  py-2 items-center gap-x-3 border-l-4 hover:bg-zinc-100 transition duration-300 ease-in cursor-pointer border-white hover:border-[#9d4cb3]'
+						className='flex items-center py-2 font-normal transition duration-300 ease-in border-l-4 border-white cursor-pointer hover:font-medium gap-x-0.5 hover:bg-lily-light hover:border-malibu-blue'
 					>
 						<div className='relative inline-flex mx-3'>
-							<span className='absolute bottom-0 right-0 inline-flex w-3 h-3 transform bg-red-500 rounded-full ring-2 ring-white translate-x-1/3 translate-y-1/3'></span>
+							<span className='absolute bottom-1 right-1 inline-flex  w-2.5 h-2.5 transform rounded-full bg-amaranth-pink ring-2 ring-white translate-x-1/4 translate-y-1/4'></span>
 							<img
 								className='object-cover w-16 h-12 rounded-full'
 								alt='User avatar'
@@ -107,25 +110,26 @@ const OpenJobs = () => {
 
 						<div className='flex flex-col w-full gap-y-1 '>
 							<div className='flex items-center justify-between w-full pr-3'>
-								<h2 className='text-lg capitalize text-zinc-800'>
+								<h2 className='text-base font-medium text-mine-dark'>
+									{" "}
 									Jonahs Kakaroto
 								</h2>
-								<span className='text-sm text-zinc-400 '>
-									1245
+								<span className='text-sm text-mine-dark opacity-80'>
+									11:49 am
 								</span>
 							</div>
-							<p className='text-sm text-zinc-500'>
+							<p className='text-sm opacity-75 text-mine-dark'>
 								Frontend Developer
 							</p>
 						</div>
 					</Link>
-					<hr className='ml-24 border-zinc-300' />
+					<hr className='ml-20 border-alto-light' />
 					<Link
 						to=''
-						className='flex font-normal hover:font-medium  py-2 items-center gap-x-3 border-l-4 hover:bg-zinc-100 transition duration-300 ease-in cursor-pointer border-white hover:border-[#9d4cb3]'
+						className='flex items-center py-2 font-normal transition duration-300 ease-in border-l-4 border-white cursor-pointer hover:font-medium gap-x-0.5 hover:bg-lily-light hover:border-malibu-blue'
 					>
 						<div className='relative inline-flex mx-3'>
-							<span className='absolute bottom-0 right-0 inline-flex w-3 h-3 transform bg-red-500 rounded-full ring-2 ring-white translate-x-1/3 translate-y-1/3'></span>
+							<span className='absolute bottom-1 right-1 inline-flex  w-2.5 h-2.5 transform rounded-full bg-amaranth-pink ring-2 ring-white translate-x-1/4 translate-y-1/4'></span>
 							<img
 								className='object-cover w-16 h-12 rounded-full'
 								alt='User avatar'
@@ -135,25 +139,25 @@ const OpenJobs = () => {
 
 						<div className='flex flex-col w-full gap-y-1 '>
 							<div className='flex items-center justify-between w-full pr-3'>
-								<h2 className='text-lg text-zinc-800'>
+								<h2 className='text-base font-medium text-mine-dark'>
 									Jim Freeman
 								</h2>
-								<span className='text-sm text-zinc-400 '>
+								<span className='text-sm text-mine-dark opacity-80'>
 									10:30 PM
 								</span>
 							</div>
-							<p className='text-sm text-zinc-500'>
+							<p className='text-sm opacity-75 text-mine-dark'>
 								Frontend Developer
 							</p>
 						</div>
 					</Link>
-					<hr className='ml-24 border-zinc-300' />
+					<hr className='ml-20 border-alto-light' />
 					<Link
 						to=''
-						className='flex font-normal hover:font-medium  py-2 items-center gap-x-3 border-l-4 hover:bg-zinc-100 transition duration-300 ease-in cursor-pointer border-white hover:border-[#9d4cb3]'
+						className='flex items-center py-2 font-normal transition duration-300 ease-in border-l-4 border-white cursor-pointer hover:font-medium gap-x-0.5 hover:bg-lily-light hover:border-malibu-blue'
 					>
 						<div className='relative inline-flex mx-3'>
-							<span className='absolute bottom-0 right-0 inline-flex w-3 h-3 transform bg-red-500 rounded-full ring-2 ring-white translate-x-1/3 translate-y-1/3'></span>
+							<span className='absolute bottom-1 right-1 inline-flex  w-2.5 h-2.5 transform rounded-full bg-amaranth-pink ring-2 ring-white translate-x-1/4 translate-y-1/4'></span>
 							<img
 								className='object-cover w-16 h-12 rounded-full'
 								alt='User avatar'
@@ -163,69 +167,69 @@ const OpenJobs = () => {
 
 						<div className='flex flex-col w-full gap-y-1 '>
 							<div className='flex items-center justify-between w-full pr-3'>
-								<h2 className='text-lg text-zinc-800'>
+								<h2 className='text-base font-medium text-mine-dark'>
 									Julian Wan
 								</h2>
-								<span className='text-sm text-zinc-400 '>
+								<span className='text-sm text-mine-dark opacity-80'>
 									09:22 AM
 								</span>
 							</div>
-							<p className='text-sm text-zinc-500'>
+							<p className='text-sm opacity-75 text-mine-dark'>
 								Fullstack Developer
 							</p>
 						</div>
 					</Link>
-					<hr className='ml-24 border-zinc-300' />
+					<hr className='ml-20 border-alto-light' />
 				</div>
 				<div className='flex-1'>
 					<div className=''>
-						<h2 className='m-3 text-lg font-semibold text-zinc-600'>
+						<h2 className='m-3 text-lg font-medium text-mine-dark'>
 							Job Description
 						</h2>
-						<article className='flex flex-col items-center p-6 m-3 space-y-3 bg-white border rounded shadow-md border-zinc-300'>
-							<div className='flex w-full py-4 mx-6 border-b-2 border-zinc-200'>
+						<article className='flex flex-col items-center p-6 m-3 space-y-3 bg-white border rounded shadow-md border-alto-light'>
+							<div className='flex w-full py-4 mx-6 border-b-2 border-alto-light'>
 								<article className='flex items-center w-full space-x-3 '>
-									<i className='p-2 bg-orange-500 rounded-full'>
-										<BsCreditCard className='text-2xl text-white' />
+									<i className='p-2 rounded-full bg-bumblebee-amber'>
+										<BsCreditCard className='text-2xl text-lily-light' />
 									</i>
 									<div className='flex flex-col w-full '>
-										<h2 className='font-medium text-zinc-800'>
+										<h2 className='font-medium text-mine-dark'>
 											Open
 										</h2>
-										<p className='text-sm text-zinc-500'>
+										<p className='text-sm opacity-75 text-mine-dark'>
 											Budget
 										</p>
 									</div>
 								</article>
 								<article className='flex items-center w-full space-x-3 '>
-									<i className='p-2 rounded-full bg-lime-500'>
-										<RiMapPin2Line className='text-2xl text-white' />
+									<i className='p-2 rounded-full bg-seanse-purple'>
+										<RiMapPin2Line className='text-2xl text-lily-light' />
 									</i>
 									<div className='flex flex-col w-full capitalize'>
-										<h2 className='font-medium text-zinc-800'>
+										<h2 className='font-medium text-mine-dark'>
 											London, UK
 										</h2>
-										<p className='text-sm text-zinc-500'>
+										<p className='text-sm opacity-75 text-mine-dark'>
 											Remote
 										</p>
 									</div>
 								</article>
 								<article className='flex items-center w-full space-x-3 '>
-									<i className='p-2 bg-[#681187] rounded-full'>
-										<GiSandsOfTime className='text-2xl text-white' />
+									<i className='p-2 rounded-full bg-amaranth-pink'>
+										<GiSandsOfTime className='text-2xl text-lily-light' />
 									</i>
 									<div className='flex flex-col w-full '>
-										<h2 className='font-medium text-zinc-800'>
+										<h2 className='font-medium text-mine-dark'>
 											Feb 2023
 										</h2>
-										<p className='text-sm text-zinc-500'>
+										<p className='text-sm opacity-75 text-mine-dark'>
 											Deadline
 										</p>
 									</div>
 								</article>
 							</div>
 							<div className='w-full py-4'>
-								<p className='leading-7 text-zinc-800'>
+								<p className='text-sm leading-7 text-mine-dark'>
 									Lorem ipsum dolor sit amet consectetur
 									adipisicing elit. Odit quasi vero,
 									reiciendis, molestiae voluptas enim possimus
@@ -237,11 +241,11 @@ const OpenJobs = () => {
 						</article>
 					</div>
 					<div className='flex-1 '>
-						<h2 className='m-3 text-lg font-semibold text-zinc-600'>
+						<h2 className='m-3 text-lg font-medium text-mine-dark'>
 							Expert Details
 						</h2>
-						<article className='flex flex-col items-center px-6 py-3 m-3 space-y-3 bg-white border rounded shadow-md border-zinc-300'>
-							<div className='flex items-center w-full pb-3 border-b-2 gap-x-3 border-zinc-200'>
+						<article className='flex flex-col items-center px-6 py-3 m-3 space-y-3 bg-white border rounded shadow-md border-alto-light'>
+							<div className='flex items-center w-full pb-3 border-b-2 gap-x-3 border-alto-light'>
 								<img
 									className='object-cover w-20 h-20 rounded-full'
 									alt='User avatar'
@@ -250,12 +254,12 @@ const OpenJobs = () => {
 
 								<div className='flex flex-col w-full gap-y-1 '>
 									<div className='flex items-center justify-between w-full pr-3'>
-										<h2 className='text-lg font-semibold text-zinc-800'>
+										<h2 className='text-lg font-semibold text-mine-dark'>
 											Julian Wan
 										</h2>
 										<Link
 											to={`/experts/${expertId}`}
-											className='flex items-center space-x-2 text-teal-500 transition duration-300 ease-in hover:text-green-600 '
+											className='flex items-center space-x-2 transition duration-300 ease-in text-kyrrex-green hover:text-malibu-blue '
 										>
 											View full profile
 											<i>
@@ -263,54 +267,54 @@ const OpenJobs = () => {
 											</i>
 										</Link>
 									</div>
-									<p className=' text-zinc-500'>
+									<p className=' text-mine-dark'>
 										Fullstack Developer
 									</p>
 								</div>
 							</div>
-							<div className='flex w-full pb-4 mx-6 border-b-2 border-zinc-200'>
+							<div className='flex w-full pb-4 mx-6 border-b-2 border-alto-light'>
 								<article className='flex items-center w-full space-x-3 '>
-									<i className='p-2 bg-orange-500 rounded-full'>
-										<BsCreditCard className='text-2xl text-white' />
+									<i className='p-2 rounded-full bg-bumblebee-amber'>
+										<BsCreditCard className='text-2xl text-lily-light' />
 									</i>
 									<div className='flex flex-col w-full '>
-										<h2 className='text-lg font-medium text-zinc-800'>
+										<h2 className='font-medium text-mine-dark'>
 											Gold
 										</h2>
-										<p className='-mt-1 text-zinc-500'>
+										<p className='text-sm opacity-75 text-mine-dark'>
 											Hourly rate
 										</p>
 									</div>
 								</article>
 								<article className='flex items-center w-full space-x-3 '>
-									<i className='p-2 bg-[#9d4cb3] rounded-full'>
-										<IoBriefcaseOutline className='text-2xl text-white' />
+									<i className='p-2 rounded-full bg-seanse-purple'>
+										<IoBriefcaseOutline className='text-2xl text-lily-light' />
 									</i>
 									<div className='flex flex-col w-full '>
-										<h2 className='text-lg font-medium text-zinc-800'>
+										<h2 className='font-medium text-mine-dark'>
 											15 Years
 										</h2>
-										<p className='-mt-1 text-zinc-500'>
+										<p className='text-sm opacity-75 text-mine-dark'>
 											Experience
 										</p>
 									</div>
 								</article>
 								<article className='flex items-center w-full space-x-3 '>
-									<i className='p-2 rounded-full bg-lime-500'>
-										<RiMapPin2Line className='text-2xl text-white' />
+									<i className='p-2 rounded-full bg-amaranth-pink'>
+										<RiMapPin2Line className='text-2xl text-lily-light' />
 									</i>
 									<div className='flex flex-col w-full '>
-										<h2 className='text-lg font-medium text-zinc-800'>
+										<h2 className='font-medium text-mine-dark'>
 											Mountain View, LA
 										</h2>
-										<p className='-mt-1 text-zinc-500'>
+										<p className='text-sm opacity-75 text-mine-dark'>
 											Location
 										</p>
 									</div>
 								</article>
 							</div>
 							<div className='w-full pb-4'>
-								<p className='leading-7 text-zinc-800'>
+								<p className='text-sm leading-7 text-mine-dark'>
 									Lorem ipsum dolor sit amet consectetur
 									adipisicing elit. Odit quasi vero,
 									reiciendis, molestiae voluptas enim possimus

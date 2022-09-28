@@ -45,7 +45,7 @@ const draftContracts = [
 ];
 const today = dateFormat(new Date(), "mediumDate");
 
-const Contracts = () => {
+const Invoice = () => {
 	return (
 		<div className='flex-1 mx-3 '>
 			<Header />
@@ -214,4 +214,4 @@ const Contracts = () => {
 	);
 };
 
-export default Contracts;
+export default Invoice;

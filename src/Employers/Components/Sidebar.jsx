@@ -9,121 +9,142 @@ import { TbHeartPlus } from "react-icons/tb";
 import { GiSandsOfTime } from "react-icons/gi";
 import { FiEdit } from "react-icons/fi";
 import { IoBriefcaseOutline, IoFileTrayOutline } from "react-icons/io5";
-import { CgMenuLeft } from "react-icons/cg";
+import { BsColumnsGap } from "react-icons/bs";
 
 const Sidebar = () => {
 	const param = useParams();
 	const expertId = param.id;
 
 	return (
-		<aside className='w-64 h-full border-slate-400 bg-zinc-800'>
-			<div className='flex items-center justify-center py-6 text-white bg-slate-900'>
+		<aside className='w-64 h-full border-r bg-kyrrex-green bg-opacity-90 border-lily-white'>
+			<div className='flex items-center justify-center py-6 text-mine-dark'>
 				Indiforce Logo
 			</div>
 			<section className=''>
 				<Link
-					to=''
-					className='flex items-center py-3 pl-4 my-3 transition duration-300 ease-in border-l-4 cursor-pointer border-zinc-800 gap-x-4 text-slate-50 hover:border-l-4 hover:border-cyan-400 hover:text-cyan-400 hover:bg-slate-800 '
+					to='/'
+					className='flex items-center py-2 pl-4 my-3 mr-3 text-white transition duration-300 ease-in rounded-r-lg cursor-pointer group gap-x-4 hover:bg-lily-light'
 				>
 					<i>
-						<CgMenuLeft className='text-xl -rotate-90 text-cyan-100 hover:text-cyan-200' />
+						<BsColumnsGap className='text-lg group-hover:text-malibu-blue ' />
 					</i>
-					<p>Dashboard</p>
+					<p className='group-hover:text-kyrrex-green group-hover:font-medium'>
+						Dashboard
+					</p>
 				</Link>
-				<hr className='ml-6 border-zinc-600' />
+				<hr className='ml-6 text-mine-dark' />
 				<div className='pt-3'>
 					<h2 className='ml-4 font-serif tracking-wide uppercase text-slate-300'>
 						All jobs
 					</h2>
 					<Link
 						to='jobs-open'
-						className='flex items-center py-3 pl-4 my-1 transition duration-300 ease-in border-l-4 cursor-pointer border-zinc-800 gap-x-4 text-slate-50 hover:border-l-4 hover:border-cyan-400 hover:text-cyan-400 hover:bg-slate-800 '
+						className='flex items-center py-2 pl-4 my-3 mr-3 text-white transition duration-300 ease-in rounded-r-lg cursor-pointer group gap-x-4 hover:bg-lily-light'
 					>
 						<i>
-							<IoFileTrayOutline className='text-xl text-cyan-100 hover:text-cyan-200' />
+							<IoFileTrayOutline className='text-xl group-hover:text-malibu-blue ' />
 						</i>
-						<p>Open</p>
+						<p className='group-hover:text-kyrrex-green group-hover:font-medium'>
+							Open
+						</p>
 					</Link>
 					<Link
 						to='contracted'
-						className='flex items-center py-3 pl-4 my-1 transition duration-300 ease-in border-l-4 cursor-pointer border-zinc-800 gap-x-4 text-slate-50 hover:border-l-4 hover:border-cyan-400 hover:text-cyan-400 hover:bg-slate-800 '
+						className='flex items-center py-2 pl-4 my-3 mr-3 text-white transition duration-300 ease-in rounded-r-lg cursor-pointer group gap-x-4 hover:bg-lily-light'
 					>
 						<i>
-							<IoBriefcaseOutline className='text-xl text-cyan-100 hover:text-cyan-200' />
+							<IoBriefcaseOutline className='text-xl group-hover:text-malibu-blue ' />
 						</i>
-						<p>Contracted</p>
+						<p className='group-hover:text-kyrrex-green group-hover:font-medium'>
+							Contracted
+						</p>
 					</Link>
 				</div>
-				<hr className='ml-6 border-zinc-600' />
+				<hr className='ml-6 text-mine-dark' />
 				<div className='pt-3'>
 					<h2 className='ml-4 font-serif tracking-wide uppercase text-slate-300'>
 						Candidates
 					</h2>
+
 					<Link
 						to=''
-						className='flex items-center py-3 pl-4 my-1 transition duration-300 ease-in border-l-4 cursor-pointer border-zinc-800 gap-x-4 text-slate-50 hover:border-l-4 hover:border-cyan-400 hover:text-cyan-400 hover:bg-slate-800 '
+						className='flex items-center py-2 pl-4 my-3 mr-3 text-white transition duration-300 ease-in rounded-r-lg cursor-pointer group gap-x-4 hover:bg-lily-light'
 					>
 						<i>
-							<BiMessageRoundedDetail className='text-xl text-cyan-100 hover:text-cyan-200' />
+							<BiMessageRoundedDetail className='text-xl group-hover:text-malibu-blue ' />
 						</i>
-						<p>Under Discussion</p>
+						<p className='group-hover:text-kyrrex-green group-hover:font-medium'>
+							Under Discussion
+						</p>
 					</Link>
 					<Link
 						to='contracts'
-						className='flex items-center py-3 pl-4 my-1 transition duration-300 ease-in border-l-4 cursor-pointer border-zinc-800 gap-x-4 text-slate-50 hover:border-l-4 hover:border-cyan-400 hover:text-cyan-400 hover:bg-slate-800 '
+						className='flex items-center py-2 pl-4 my-3 mr-3 text-white transition duration-300 ease-in rounded-r-lg cursor-pointer group gap-x-4 hover:bg-lily-light'
 					>
 						<i>
-							<MdOutlinePeopleOutline className='text-xl text-cyan-100 hover:text-cyan-200' />
+							<MdOutlinePeopleOutline className='text-xl group-hover:text-malibu-blue ' />
 						</i>
-						<p>Contracted</p>
+						<p className='group-hover:text-kyrrex-green group-hover:font-medium'>
+							Contracted
+						</p>
 					</Link>
 					<Link
 						to={`/experts/${expertId}`}
-						className='flex items-center py-3 pl-4 my-1 transition duration-300 ease-in border-l-4 cursor-pointer border-zinc-800 gap-x-4 text-slate-50 hover:border-l-4 hover:border-cyan-400 hover:text-cyan-400 hover:bg-slate-800 '
+						className='flex items-center py-2 pl-4 my-3 mr-3 text-white transition duration-300 ease-in rounded-r-lg cursor-pointer group gap-x-4 hover:bg-lily-light'
 					>
 						<i>
-							<TbHeartPlus className='text-xl text-cyan-100 hover:text-cyan-200' />
+							<TbHeartPlus className='text-xl group-hover:text-malibu-blue ' />
 						</i>
-						<p>Favorites</p>
+						<p className='group-hover:text-kyrrex-green group-hover:font-medium'>
+							Favorites
+						</p>
 					</Link>
 				</div>
-				<hr className='ml-6 border-zinc-600' />
+				<hr className='ml-6 text-mine-dark' />
 				<div className='pt-3'>
 					<Link
 						to=''
-						className='flex items-center py-3 pl-4 my-1 transition duration-300 ease-in border-l-4 cursor-pointer border-zinc-800 gap-x-4 text-slate-50 hover:border-l-4 hover:border-cyan-400 hover:text-cyan-400 hover:bg-slate-800 '
+						className='flex items-center py-2 pl-4 my-3 mr-3 text-white transition duration-300 ease-in rounded-r-lg cursor-pointer group gap-x-4 hover:bg-lily-light'
 					>
 						<i>
-							<BiMessageRoundedDetail className='text-xl text-cyan-100 hover:text-cyan-200' />
+							<BiMessageRoundedDetail className='text-xl group-hover:text-malibu-blue ' />
 						</i>
-						<p>Terms</p>
+						<p className='group-hover:text-kyrrex-green group-hover:font-medium'>
+							Terms
+						</p>
 					</Link>
 					<Link
 						to='/invoices'
-						className='flex items-center py-3 pl-4 my-1 transition duration-300 ease-in border-l-4 cursor-pointer border-zinc-800 gap-x-4 text-slate-50 hover:border-l-4 hover:border-cyan-400 hover:text-cyan-400 hover:bg-slate-800 '
+						className='flex items-center py-2 pl-4 my-3 mr-3 text-white transition duration-300 ease-in rounded-r-lg cursor-pointer group gap-x-4 hover:bg-lily-light'
 					>
 						<i>
-							<FaFileInvoiceDollar className='text-xl text-cyan-100 hover:text-cyan-200' />
+							<FaFileInvoiceDollar className='text-xl group-hover:text-malibu-blue ' />
 						</i>
-						<p>Invoices</p>
+						<p className='group-hover:text-kyrrex-green group-hover:font-medium'>
+							Invoices
+						</p>
 					</Link>
 					<Link
 						to=''
-						className='flex items-center py-3 pl-4 my-1 transition duration-300 ease-in border-l-4 cursor-pointer border-zinc-800 gap-x-4 text-slate-50 hover:border-l-4 hover:border-cyan-400 hover:text-cyan-400 hover:bg-slate-800 '
+						className='flex items-center py-2 pl-4 my-3 mr-3 text-white transition duration-300 ease-in rounded-r-lg cursor-pointer group gap-x-4 hover:bg-lily-light'
 					>
 						<i>
-							<FiEdit className='text-xl text-cyan-100 hover:text-cyan-200' />
+							<FiEdit className='text-xl group-hover:text-malibu-blue ' />
 						</i>
-						<p>Recommendations</p>
+						<p className='group-hover:text-kyrrex-green group-hover:font-medium'>
+							Recommendations
+						</p>
 					</Link>
 					<Link
-						to=''
-						className='flex items-center py-3 pl-4 my-1 transition duration-300 ease-in border-l-4 cursor-pointer border-zinc-800 gap-x-4 text-slate-50 hover:border-l-4 hover:border-cyan-400 hover:text-cyan-400 hover:bg-slate-800 '
+						to='/history'
+						className='flex items-center py-2 pl-4 my-3 mr-3 text-white transition duration-300 ease-in rounded-r-lg cursor-pointer group gap-x-4 hover:bg-lily-light'
 					>
 						<i>
-							<GiSandsOfTime className='text-xl text-cyan-100 hover:text-cyan-200' />
+							<GiSandsOfTime className='text-xl group-hover:text-malibu-blue ' />
 						</i>
-						<p>History</p>
+						<p className='group-hover:text-kyrrex-green group-hover:font-medium'>
+							History
+						</p>
 					</Link>
 				</div>
 			</section>

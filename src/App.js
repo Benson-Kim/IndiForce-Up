@@ -4,14 +4,16 @@ import {
 	Contracts,
 	Dashboard,
 	Expert,
+	History,
 	Invoices,
 	OpenJobs,
 	Search,
 } from "./Employers/Pages";
+// import Invoice from "./Employers/Pages/Invoice";
 
 const App = () => {
 	return (
-		<div className='relative flex justify-between w-full h-full scroll-smooth'>
+		<div className='relative flex justify-between w-full h-full font-poppins bg-lily-light scroll-smooth'>
 			<Layout />
 			<Routes>
 				<Route path='/' element={<Dashboard />} />
@@ -21,6 +23,7 @@ const App = () => {
 
 				<Route path='/invoices' element={<Invoices />} />
 				<Route path='/contracts' element={<Contracts />} />
+				<Route path='/history' element={<History />} />
 			</Routes>
 		</div>
 	);
