@@ -2,7 +2,11 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-import { BsCreditCard } from "react-icons/bs";
+import {
+	BsChatRightDotsFill,
+	BsCreditCard,
+	BsFillBookmarkPlusFill,
+} from "react-icons/bs";
 import { BiArrowBack, BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import { IoBriefcaseOutline } from "react-icons/io5";
 import { AiOutlineLine } from "react-icons/ai";
@@ -338,40 +342,21 @@ const Expert = () => {
 					</ol>
 				</div>
 			</section>
-			<section className='absolute bottom-0 flex items-center justify-between w-full px-5 py-2 mb-6 bg-white border rounded-md border-alto-light'>
-				<Link
-					to=''
-					className='flex items-center text-base font-medium tracking-wider transition duration-300 ease-in text-kyrrex-green hover:text-malibu-blue '
-				>
-					<i>
-						<BiArrowBack className='mr-1 text-xl font-semibold ' />
-					</i>
-					All Experts
-				</Link>
 
-				<div className='flex items-center gap-x-1.5 '>
-					<Link
-						to=''
-						className='flex items-center font-medium transition duration-300 ease-in text-kyrrex-green hover:text-malibu-blue'
-					>
-						<i>
-							<BiChevronLeft className='text-2xl font-semibold' />
-						</i>
-						Previous Expert
-					</Link>
+			<section className='fixed bottom-0 left-0 flex items-center justify-between w-5/6 px-5 py-2 ml-64 bg-lily-light border-y border-alto-light '>
+				<button className='flex items-center justify-center px-4 py-2 font-sans text-sm tracking-wide uppercase transition duration-300 ease-in border rounded cursor-pointer hover:text-white bg-kyrrex-green hover:bg-opacity-95 bg-opacity-10 text-kyrrex-green border-kyrrex-green gap-x-2 '>
 					<i>
-						<AiOutlineLine className='text-xl rotate-90 text-edward-gray ' />
+						<BsFillBookmarkPlusFill className='text-lg' />
 					</i>
-					<Link
-						to=''
-						className='flex items-center font-medium transition duration-300 ease-in text-kyrrex-green hover:text-malibu-blue'
-					>
-						Next Expert
-						<i>
-							<BiChevronRight className='text-2xl font-semibold' />
-						</i>
-					</Link>
-				</div>
+					save for later
+				</button>
+
+				<button className='flex items-center justify-center px-4 py-2 font-sans text-sm tracking-wide text-white uppercase transition duration-300 ease-in border rounded cursor-pointer bg-kyrrex-green bg-opacity-95 hover:bg-opacity-10 hover:text-kyrrex-green border-kyrrex-green gap-x-2 '>
+					<i>
+						<BsChatRightDotsFill className='text-lg' />
+					</i>
+					Contact
+				</button>
 			</section>
 		</div>
 	);
